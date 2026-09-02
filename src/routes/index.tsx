@@ -79,8 +79,8 @@ function Index() {
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/80 to-background/10" />
 
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7">
-          <img src={logo.url} alt="Silkenty" className="h-14 w-auto mix-blend-multiply" />
+        <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-7">
+          <img src={logo.url} alt="Silkenty" className="h-14 w-auto shrink-0 object-contain mix-blend-multiply" />
           <div className="hidden items-center gap-9 text-sm text-foreground/70 sm:flex">
             <a href="#products" className="transition-colors hover:text-primary">
               Blends
