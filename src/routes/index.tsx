@@ -7,6 +7,7 @@ import purify from "@/assets/purify.jpg";
 import awakening from "@/assets/awakening.jpg";
 import rejuvenate from "@/assets/rejuvenate.jpg";
 import evolve from "@/assets/evolve.jpg";
+import flatLay from "@/assets/flat-lay.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -71,13 +72,13 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <header className="relative isolate min-h-[80vh] flex flex-col overflow-hidden">
+      <header className="relative isolate flex min-h-[88vh] flex-col overflow-hidden lg:min-h-0 lg:aspect-[1585/992]">
         <img
           src={hero.url}
           alt="Misty tea hills at sunrise with a cast-iron teapot and a Silkenty tin"
-          className="absolute inset-0 -z-10 h-full w-full object-cover"
+          className="absolute inset-0 -z-10 h-full w-full object-cover object-bottom"
         />
-        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background via-background/80 to-background/10" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-r from-background/85 via-background/35 to-transparent" />
 
         <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-7">
           <img src={logo.url} alt="Silkenty" className="h-14 w-auto shrink-0 object-contain mix-blend-multiply" />
@@ -98,11 +99,11 @@ function Index() {
         </nav>
 
         <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 pt-10 pb-24">
-          <p className="eyebrow text-accent">Real loose leaf · Grown, not manufactured</p>
+          <p className="script text-3xl text-accent sm:text-4xl">Real loose leaf</p>
           <h1 className="mt-6 max-w-2xl text-5xl leading-[1.05] sm:text-7xl">
             Tea that does <em className="not-italic text-primary">something</em> for you.
           </h1>
-          <p className="mt-6 max-w-lg text-lg text-muted-foreground">
+          <p className="mt-6 max-w-lg text-lg text-foreground/75">
             Five wellness blends of whole leaves, roots and petals — picked at origin and
             packed into silk pyramids. No dust, no filler, no shortcuts.
           </p>
@@ -128,7 +129,7 @@ function Index() {
         <section id="products" className="mx-auto max-w-7xl px-6 py-24 sm:py-32">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
-              <p className="eyebrow text-primary">The collection</p>
+              <p className="script text-3xl text-primary">The collection</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">Five blends, five intentions</h2>
             </div>
             <p className="max-w-sm text-muted-foreground">
@@ -193,11 +194,31 @@ function Index() {
           </div>
         </section>
 
+        {/* Flat lay */}
+        <section className="border-y border-border bg-leaf-soft/40">
+          <div className="mx-auto max-w-7xl px-6 py-20 text-center">
+            <p className="script text-3xl text-primary">All together now</p>
+            <h2 className="mt-2 text-3xl sm:text-4xl">The full Silkenty shelf</h2>
+            <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
+              Five tins, one palette of real botanicals — moringa, mint, orange peel,
+              jasmine and pomegranate, exactly as they go into the pyramid.
+            </p>
+            <img
+              src={flatLay}
+              alt="All five Silkenty tea tins laid out with fresh moringa, mint, orange peel and jasmine botanicals"
+              loading="lazy"
+              width={1964}
+              height={801}
+              className="mt-10 w-full rounded-3xl border border-border bg-card object-contain shadow-[0_30px_70px_-40px_color-mix(in_oklab,var(--color-leaf)_70%,transparent)]"
+            />
+          </div>
+        </section>
+
         {/* Brand story */}
         <section id="story" className="border-y border-border bg-cream">
           <div className="mx-auto grid max-w-7xl gap-14 px-6 py-24 lg:grid-cols-2 lg:items-center">
             <div>
-              <p className="eyebrow text-accent">Our story</p>
+              <p className="script text-3xl text-accent">Our story</p>
               <h2 className="mt-3 text-4xl sm:text-5xl">
                 Wellness begins with what's really in the cup.
               </h2>
