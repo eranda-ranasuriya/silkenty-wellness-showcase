@@ -5,8 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-display: "Karla", ui-sans-serif, system-ui, sans-serif;
-  --font-script: "Parisienne", cursive;
+  --font-script: "Caveat", cursive;
   --font-sans: "Karla", ui-sans-serif, system-ui, sans-serif;
   --color-leaf: oklch(0.55 0.11 148);
   --color-leaf-soft: oklch(0.93 0.04 148);
