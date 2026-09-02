@@ -97,7 +97,7 @@ function Index() {
           </div>
         </nav>
 
-        <div className="mx-auto flex max-w-7xl flex-col justify-center flex-1 px-6 pt-10 pb-24">
+        <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-6 pt-10 pb-24">
           <p className="eyebrow text-accent">Real loose leaf · Grown, not manufactured</p>
           <h1 className="mt-6 max-w-2xl text-5xl leading-[1.05] sm:text-7xl">
             Tea that does <em className="not-italic text-primary">something</em> for you.
