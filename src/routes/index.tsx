@@ -72,7 +72,7 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
-      <header className="relative isolate flex min-h-[88vh] flex-col overflow-hidden lg:min-h-0 lg:aspect-[1585/992]">
+      <header className="relative isolate flex h-screen flex-col overflow-hidden">
         <img
           src={hero.url}
           alt="Misty tea hills at sunrise with a cast-iron teapot and a Silkenty tin"
